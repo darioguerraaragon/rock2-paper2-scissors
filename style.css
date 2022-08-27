@@ -76,7 +76,7 @@ img:hover {
     justify-content: space-evenly;
 }
 
-.stop {
+/*.stop {
     width: 40%;
     height: 50%;
     border-radius: 10px;
@@ -84,7 +84,7 @@ img:hover {
     color: white;
     font-size: 25px;
     font-family: monospace;
-}
+}*/
 
 .play {
     width: 40%;
@@ -101,9 +101,9 @@ img:hover {
     color:rgb(255, 102, 0) ;
 }
 
-.stop:hover {
+/*.stop:hover {
     color:rgb(43, 43, 107) ;
-}
+}*/
 
 .div-b {
     width: 100%;
