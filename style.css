@@ -15,6 +15,8 @@ body {
     align-items: center;
     justify-content: space-evenly;
     height: 100vh;
+    position: relative;
+    z-index: 1;
 }
 
 .div-a {
@@ -135,4 +137,30 @@ img:hover {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+}
+
+/*Nueva funcionalidad agregada*/
+.info-a {
+    z-index: 2;
+    position: absolute;
+    background-color: rgb(52, 52, 143);
+    width: 30%;
+    height: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform: translate(0 , -550%);
+}
+
+.aparece-a {
+    transform: translate(0 , 0);
+}
+
+.hide {
+    transform: translate(0 , -550%);
 }

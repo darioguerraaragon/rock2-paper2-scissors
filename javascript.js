@@ -2,7 +2,7 @@ const d = document
 let puntos_para_a = 0
 let puntos_para_b = 0
 let btn_play = d.querySelector("#btn_play")
-//let btn_stop = d.querySelector("#btn_stop")
+let info_a = d.querySelector("#info-a")
 let cards_b = d.querySelectorAll("#cards-b")
 let puntos_a = d.querySelector("#puntos-a")
 let puntos_b = d.querySelector("#puntos-b")
@@ -14,9 +14,7 @@ btn_play.addEventListener("click" , e => {
     function repetir_img (){
         let cards_a = d.querySelector("#cards-a")
         img_a = Math.floor(Math.random()*3)
-        cards_a.innerHTML = `<img src=./fotos-proyecto-dos/${[imgs[img_a]]}>`
-        //console.log(imgs[img_a])
-        //console.log(img_a)    
+        cards_a.innerHTML = `<img src=./fotos-proyecto-dos/${[imgs[img_a]]}>`  
     }
 
 }) 
@@ -47,6 +45,12 @@ cards_b.forEach(el => {
         }else {
             puntos_para_b += 1
             puntos_b.innerHTML = `${puntos_para_b}`
+            //Esto es parte de la nueva funcionalidada
+            info_a.classList.add("aparece-a")
+            setTimeout(ganador , 2000)
+            function ganador(){
+                info_a.classList.add("hide")      
+            }
         }
         
         
