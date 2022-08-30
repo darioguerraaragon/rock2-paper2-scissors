@@ -143,7 +143,7 @@ img:hover {
 .info-a {
     z-index: 2;
     position: absolute;
-    background-color: rgb(52, 52, 143);
+    background-color: rgb(47, 47, 202);
     width: 30%;
     height: 10%;
     display: flex;
@@ -157,10 +157,49 @@ img:hover {
     transform: translate(0 , -550%);
 }
 
+.info-b {
+    z-index: 3;
+    position: absolute;
+    background-color: rgb(204, 19, 19);
+    width: 30%;
+    height: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform: translate(0 , -550%);
+}
+
+.info-c {
+    z-index: 4;
+    position: absolute;
+    background-color: rgb(139, 133, 133);
+    width: 30%;
+    height: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform: translate(0 , -550%);
+}
+
 .aparece-a {
     transform: translate(0 , 0);
+    transition: all .3s ease;
 }
 
 .hide {
     transform: translate(0 , -550%);
+    transition: all 1.5s ease;
 }
+
+/*Iconos*/
+
