@@ -33,61 +33,61 @@ cards_b.forEach(el => {
             puntos_para_a += 1
             puntos_a.innerHTML = `${puntos_para_a}`
             //Nueva funcionalidad
-            info_b.classList.toggle("aparece-a")
+            info_b.classList.add("aparece-a")
             setTimeout(ganador , 2000)
             function ganador(){
-                info_b.classList.toggle("hide")      
+                info_b.classList.remove("aparece-a")      
             }
         }else if (img_a === 1 && el.dataset.name === "papel"){
             puntos_para_a += 1
             puntos_a.innerHTML = `${puntos_para_a}`
             //Nueva funcionalidad
-            info_b.classList.toggle("aparece-a")
+            info_b.classList.add("aparece-a")
             setTimeout(ganador , 2000)
             function ganador(){
-                info_b.classList.toggle("hide")      
+                info_b.classList.remove("aparece-a")      
             }
         }else if (img_a === 2 && el.dataset.name === "tijeras"){
             puntos_para_a += 1
             puntos_a.innerHTML = `${puntos_para_a}`
             //Nueva funcionalidad
-            info_b.classList.toggle("aparece-a")
+            info_b.classList.add("aparece-a")
             setTimeout(ganador , 2000)
             function ganador(){
-                info_b.classList.toggle("hide")      
+                info_b.classList.remove("aparece-a")      
             }
         }else if (img_a === 0 && el.dataset.name === "papel"){
             console.log("empate")
             //Nueva funcionalidad
-            info_c.classList.toggle("aparece-a")
+            info_c.classList.add("aparece-a")
             setTimeout(ganador , 2000)
             function ganador(){
-                info_c.classList.toggle("hide")      
+                info_c.classList.remove("aparece-a")      
             }
         }else if (img_a === 1 && el.dataset.name === "tijeras"){
             console.log("empate")
             //Nueva funcionalidad
-            info_c.classList.toggle("aparece-a")
+            info_c.classList.add("aparece-a")
             setTimeout(ganador , 2000)
             function ganador(){
-                info_c.classList.toggle("hide")      
+                info_c.classList.remove("aparece-a")      
             }
         }else if (img_a === 2 && el.dataset.name === "piedra"){
             console.log("Empate")
             //Nueva funcionalidad
-            info_c.classList.toggle("aparece-a")
+            info_c.classList.add("aparece-a")
             setTimeout(ganador , 2000)
             function ganador(){
-                info_c.classList.toggle("hide")      
+                info_c.classList.remove("aparece-a")      
             }
         }else {
             puntos_para_b += 1
             puntos_b.innerHTML = `${puntos_para_b}`
             //Esto es parte de la nueva funcionalidada
-            info_a.classList.toggle("aparece-a")
+            info_a.classList.add("aparece-a")
             setTimeout(ganador , 2000)
             function ganador(){
-                info_a.classList.toggle("hide")      
+                info_a.classList.remove("aparece-a")      
             }
         }
         

@@ -196,10 +196,5 @@ img:hover {
     transition: all .3s ease;
 }
 
-.hide {
-    transform: translate(0 , -550%);
-    transition: all 1.5s ease;
-}
-
 /*Iconos*/
 
