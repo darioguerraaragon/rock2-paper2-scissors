@@ -94,3 +94,31 @@ cards_b.forEach(el => {
         
     })
 })
+
+//funcion background-change
+
+let img_btn = d.querySelector("#img-btn")
+let body = d.querySelector("#body")
+let contador = 4
+img_btn.addEventListener("click" , e => {
+    contador -= 1
+    console.log(contador)
+    console.log(body)
+    if(contador === 3){
+        body.classList.add("back-1")
+    }else if (contador === 2){
+        body.classList.remove("back-1")
+        body.classList.add("back-2")
+    }else if (contador === 1){
+        body.classList.remove("back-2")
+        body.classList.add("back-3")
+
+        puntos_a.classList.add("p-a")
+        puntos_b.classList.add("p-a")
+    }else{
+        body.classList.remove("back-3")
+        puntos_a.classList.remove("p-a")
+        puntos_b.classList.remove("p-a")
+        contador += 4
+    }
+})

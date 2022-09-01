@@ -215,3 +215,33 @@ img:hover {
     width: 50px;
     height: 50px;
 }
+
+/*estilos de bachground-change*/
+
+.img-btn {
+    width: 5%;
+    height: 10%;
+    position: absolute;
+    z-index: 5;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.back-1 {
+    background-image: url("./fotos-proyecto-dos/vs2.jpg");
+    background-size: cover;
+}
+
+.back-2 {
+    background-image: url("./fotos-proyecto-dos/vs3.jpg");
+    background-size: cover;
+}
+
+.back-3 {
+    background-image: url("./fotos-proyecto-dos/vs4.jpg");
+    background-size: cover;
+}
+
+.p-a {
+    background-color: rgb(255, 94, 0);
+}
