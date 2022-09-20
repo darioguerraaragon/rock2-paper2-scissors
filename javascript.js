@@ -122,3 +122,13 @@ img_btn.addEventListener("click" , e => {
         contador += 4
     }
 })
+
+//responsive-branch
+
+/*window.addEventListener("resize" , e =>{
+    console.log(window.innerWidth)
+    if(window.innerWidth <= 700){
+        let responsive_b = d.querySelector("#div-b")
+        responsive_b.classList.add("responsive")
+    }
+})*/
