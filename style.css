@@ -10,11 +10,11 @@ body {
 }
 
 .section {
+    min-height: 100vh;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: space-evenly;
-    height: 100vh;
     position: relative;
     z-index: 1;
 }
@@ -37,7 +37,7 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
+    font-size: 300%;
     font-family: monospace;
     box-shadow: 0px 10px 10px -6px black;
 }
@@ -130,7 +130,7 @@ img:hover {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
+    font-size: 300%;
     font-family: monospace;
     box-shadow: 0px 10px 10px -6px black;
 }
@@ -244,6 +244,7 @@ img:hover {
 .back-3 {
     background-image: url("./fotos-proyecto-dos/vs4.jpg");
     background-size: cover;
+
 }
 
 .p-a {
@@ -251,3 +252,64 @@ img:hover {
 }
 
 /*responsive branch*/
+
+@media (max-width: 750px){
+    .div-b{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        min-height: 25rem;
+    }
+
+    .div-a {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        min-height: 15rem;
+    }
+
+    .info-a {
+        transform: translate(0 , -650%);    
+    }
+    .info-b {
+        transform: translate(0 , -650%);
+    }
+    .info-c {
+        transform: translate(0 , -650%);
+    }
+
+    .section{
+        height: 100%;
+    }
+
+    .sad {
+        transform: translate(0 , -150%);
+    }
+    .party {
+        transform: translate(0 , -150%);
+    }
+    .igual {
+        transform: translate(0 , -150%);
+    }
+
+    .puntos-a {
+        border: none;
+        box-shadow: none;
+    }
+
+    .puntos-b {
+        border: none;
+        box-shadow: none;
+    }
+
+    .img-btn {
+        width: 7%;
+        height: 7%;
+    }
+
+    .botones {
+        width: 100%;
+    }
+}
